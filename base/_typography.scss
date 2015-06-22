@@ -1,0 +1,122 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  -webkit-font-smoothing: antialiased;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: $base-background-color; /* Fallback for when there is no custom background color defined. */
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted $medium-gray;
+	cursor: help;
+}
+
+address {
+	margin: 0 0 $base-spacing;
+}
+
+big {
+	font-size: $base-font-color * 1.25;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: $code-font-family;
+	font-size: $base-font-size * 0.9375;
+}
+
+dfn,
+cite,
+em, i {
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+}
+
+mark,
+ins {
+	background: $base-background-mark-color;
+	text-decoration: none;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+pre {
+	background: $base-background-pre-color;
+	font-family: $pre-font-family;
+	font-size: $base-font-size * 0.9375;
+	line-height: $pre-line-height;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: darken($action-color, 15%);
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+	height: auto; /* Make sure images are scaled correctly. */
+  margin: 0;
+  max-width: 100%; /* Adhere to container width. */
+}
+
+blockquote, q {
+  margin: 0 $base-spacing;
+	quotes: "" "";
+
+	&:before,
+	&:after {
+		content: "";
+	}
+}

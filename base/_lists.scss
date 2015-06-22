@@ -1,0 +1,60 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &%default-ul {
+    list-style-type: disc;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+
+  &%default-ol {
+    list-style-type: decimal;
+    margin-bottom: $small-spacing;
+    padding-left: $base-spacing;
+  }
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+// Underscores
+.entry-content {
+  ul, ol {
+  	margin: 0 0 $base-spacing $base-spacing*2;
+  }
+  
+  ul {
+  	list-style: disc;
+  }
+  
+  ol {
+  	list-style: decimal;
+  }
+  
+  li > ul,
+  li > ol {
+  	margin-bottom: 0;
+  	margin-left: $base-spacing;
+  }
+  
+  dt {
+  	font-weight: bold;
+  }
+  
+  dd {
+  	margin: 0 $base-spacing $base-spacing;
+  }
+}
