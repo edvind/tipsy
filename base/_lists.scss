@@ -33,7 +33,7 @@ dl {
 // Underscores
 .entry-content {
   ul, ol {
-  	margin: 0 0 $base-spacing $base-spacing*2;
+  	margin: 0 0 ( $base-spacing $base-spacing * 2 );
   }
   
   ul {
