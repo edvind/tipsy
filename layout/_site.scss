@@ -1,12 +1,10 @@
 .site-header {
-  padding: $base-spacing;
-  @include row();
+  @include pad;
   @include outer-container;
 }
 
 .site-content {
-  padding: $base-spacing;
-  @include row();
+  @include pad;
   @include outer-container;
   
   .content-area {
@@ -23,7 +21,6 @@
 }
 
 .site-footer {
-  padding: $base-spacing;
-  @include row();
+  @include pad;
   @include outer-container;
 }
