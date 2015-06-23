@@ -1,9 +1,11 @@
 .site-header {
+  padding: $base-spacing;
   @include row();
   @include outer-container;
 }
 
 .site-content {
+  padding: $base-spacing;
   @include row();
   @include outer-container;
   
@@ -21,6 +23,7 @@
 }
 
 .site-footer {
+  padding: $base-spacing;
   @include row();
   @include outer-container;
 }
