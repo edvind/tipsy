@@ -1,0 +1,26 @@
+.site-header {
+  @include row();
+  @include outer-container;
+}
+
+.site-content {
+  @include row();
+  @include outer-container;
+  
+  .content-area {
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
+  }
+  
+  .widget-area {
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+  }
+}
+
+.site-footer {
+  @include row();
+  @include outer-container;
+}
