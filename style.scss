@@ -37,14 +37,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
-@import "lib/normalize/normalize";
+@import "vendor/normalize/normalize";
 
 /*--------------------------------------------------------------
 # Bourbon & Neat
 --------------------------------------------------------------*/
-@import "lib/bourbon/bourbon";
+@import "vendor/bourbon/bourbon";
 @import "base/grid-settings";
-@import "lib/neat/neat";
+@import "vendor/neat/neat";
 
 /*--------------------------------------------------------------
 # Bitters (base)
