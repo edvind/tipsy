@@ -6,14 +6,12 @@
 	width: 1px;
 	overflow: hidden;
 
-	&:hover,
-	&:active,
 	&:focus {
 		background-color: $base-background-screen-color;
 		border-radius: 3px;
 		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 		clip: auto !important;
-		color: $base-font-screen-color;
+		color: $base-font-screen-color;;
 		display: block;
 		font-size: $base-font-size * 0.875;
 		font-weight: bold;
