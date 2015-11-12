@@ -3,41 +3,49 @@
 }
 
 .gallery-item {
-	display: inline-block;
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
+	margin: 0;
 
 	.gallery-columns-2 & {
-		max-width: 50%;
+  	@include span-columns(6);
+  	@include omega(2n);
 	}
 
 	.gallery-columns-3 & {
-		max-width: 33.33%;
+  	@include span-columns(4);
+  	@include omega(3n);
 	}
 
 	.gallery-columns-4 & {
-		max-width: 25%;
+  	@include span-columns(3);
+  	@include omega(4n);
 	}
 
 	.gallery-columns-5 & {
-		max-width: 20%;
+  	@include span-columns(12/5);
+  	@include omega(5n);
 	}
 
 	.gallery-columns-6 & {
-		max-width: 16.66%;
+  	@include span-columns(2);
+  	@include omega(6n);
 	}
 
 	.gallery-columns-7 & {
-		max-width: 14.28%;
+  	@include span-columns(7/12);
+  	@include omega(7n);
 	}
 
 	.gallery-columns-8 & {
-		max-width: 12.5%;
+  	@include span-columns(1.5);
+  	@include omega(8n);
 	}
 
 	.gallery-columns-9 & {
-		max-width: 11.11%;
+  	@include span-columns(9/12);
+  	@include omega(9n);
 	}
 }
 
